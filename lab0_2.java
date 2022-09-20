@@ -20,7 +20,6 @@ public class lab0_2 {
     public static int[] generateRandomArray( int lengthOfArray )
     {
 	int[] randomArray = new int[lengthOfArray];
-	double randomValue;
 	for ( int i = 0; i < lengthOfArray - 1; i++ )
 	{
 		randomArray[i] = (int) ( 101 * Math.random( ) );
