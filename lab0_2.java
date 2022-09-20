@@ -30,9 +30,9 @@ public class lab0_2 {
     }	
 	
     public static void displayer(int numbers[]){
-        System.out.println("Your array is this: ");
+        System.out.print("Your array is this: ");
 		for (int i=0;i<numbers.length;i++){
-			System.out.println( (i+1) +  numbers[i] + " ");
+			System.out.print( (i+1) +  numbers[i] + " ");
 		}
         System.out.println("Sum of the even indexes is : ");
         for(int i=0;i<numbers.length;i=i+2){
