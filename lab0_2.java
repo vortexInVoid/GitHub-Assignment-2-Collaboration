@@ -37,7 +37,7 @@ public class lab0_2 {
         }
 	}
 
-    class d{
+    
         public int[] averageMinus(int arr[])
         {
             int sum = 0;
