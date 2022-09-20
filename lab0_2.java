@@ -1,4 +1,3 @@
-
 import java.util.Random;
 import java.util.Scanner;
 public class lab0_2 {
@@ -38,5 +37,22 @@ public class lab0_2 {
         }
 	}
 
+    class d{
+        public int[] averageMinus(int arr[])
+        {
+            int sum = 0;
+            for (int i = 0; i < arr.length; i++)
+                sum += arr[i];
+            int average = (int)sum / arr.length;
+            
+            int[] newArr = new int[arr.length];
+            for (int i = 0; i < arr.length; i++) {
+                newArr[i] = newArr[i] - average;
+            }
+    
+            return newArr;
+        }
+    
+    }
     
 }
