@@ -1,4 +1,3 @@
-import java.util.Random;
 import java.util.Scanner;
 public class lab0_2 {
 
@@ -12,16 +11,24 @@ public class lab0_2 {
         System.out.print("Enter the size of the array:");
         n = scan.nextInt();
 
-        int numbers[] = new int [n];
-        Random m = new Random();
+        int numbers[] = generateRandomArray( n );
 
-        for (int i=0;i<numbers.length;i++){
-			numbers[i]=m.nextInt(100);
-        }
         displayer(numbers);
 
 
     }
+    public static int[] generateRandomArray( int lengthOfArray )
+    {
+	int[] randomArray = new int[lengthOfArray];
+	double randomValue;
+	for ( int i = 0; i < lengthOfArray - 1; i++ )
+	{
+		randomArray[i] = (int) ( 101 * Math.random( ) );
+	}
+
+	return randomArray;
+    }	
+	
     public static void displayer(int numbers[]){
         System.out.println("Your array is this: ");
 		for (int i=0;i<numbers.length;i++){
