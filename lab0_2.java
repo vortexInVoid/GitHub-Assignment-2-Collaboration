@@ -60,5 +60,3 @@ public class lab0_2 {
         }
     
     }
-    
-
